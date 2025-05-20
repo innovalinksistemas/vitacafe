@@ -1,0 +1,62 @@
+---
+import { Image } from "astro:assets";
+//  import face from "../assets/face.png";
+//  import insta from "../assets/insta.png";
+ import logo from "../assets/logovitab.png";
+//  import whatsapp from "../assets/whatsapp.png"
+//  import mail from "../assets/mail.png"
+---
+
+<footer id="footer" class="relative bg-[#43260F] shadow px-6 py-12">
+  <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-12">
+    <!-- Logo y redes -->
+    <div class="flex flex-col items-center text-white">
+      <Image class="w-64 sm:w-72 lg:w-[150px]" src={logo} alt="Innova logo" />
+      <div class="mt-4 text-center">
+        <h5 class="text-sm sm:text-base mb-2">Síguenos en nuestras redes sociales</h5>
+        <div class="flex justify-center gap-4">
+          <a href="https://www.facebook.com/share/1AKNHpUZjn/">
+            <!-- <Image class="h-8 w-8 sm:h-10 sm:w-10" src={face} alt="Facebook" /> -->
+          </a>
+          <a href="https://www.instagram.com/innovalink_cr/#">
+            <!-- <Image class="h-8 w-8 sm:h-10 sm:w-10" src={insta} alt="Instagram" /> -->
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info de contacto -->
+    <div class="flex flex-col text-white text-center text-sm sm:text-base font-medium gap-4">
+      <div class="flex items-center justify-center gap-2">
+        <!-- <Image class="w-6 sm:w-8" src={mail} alt="mail" /> -->
+        <a href="mailto:info@innovalinkcr.com" class="hover:underline">info@innovalinkcr.com</a>
+      </div>
+
+      <div class="flex items-center justify-center gap-2 pr-12">
+        <a href="https://wa.me/message/PSDJXRERKMOJI1">
+          <!-- <Image class="w-6 sm:w-8" src={whatsapp} alt="whatsapp" /> -->
+          <p>+506 6292 0784</p>
+        </a>
+
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="flex items-center justify-center gap-2 mb-1">
+          <!-- <Image class="w-6 sm:w-8" src={reloj} alt="horario" /> -->
+          <p class="font-semibold">Horario de Atención</p>
+        </div>
+        <p>
+          Lunes a Viernes: 8:00 am - 6:00 pm <br />
+          Sábado y Domingo: 10:00 am - 4:00 pm
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <span class="block text-xs sm:text-sm text-gray-300 text-center mt-10">
+    © 2025 <a href="https://www.innovalinkcr.com" class="hover:underline">Innovalinkcr</a>. Todos los derechos reservados.
+  </span>
+</footer>
