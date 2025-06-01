@@ -4,31 +4,40 @@ import catarata from "../assets/catarata.jpg";
 
 ---
 
-<main class="bg-white py-16 px-4 md:px-12">
+
+<main id="nuestras-cafeterias" class="bg-white py-16 px-6 md:px-12">
     <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-5xl py-4">Nuestras Cafeterías</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Nuestras Cafeterías</h2>
 
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Moravia -->
-      <div class="bg-white shadow-lg rounded-xl overflow-hidden border">
-            <Image src={catarata} alt="Catarata" class="w-full h-82 object-cover bg-cover" />
+      <!-- Catarata -->
+      <div class="relative bg-white rounded-xl border border-gray-200 shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+            <Image src={catarata} alt="Catarata" class="w-full h-100 object-cover bg-cover" />
         <div class="p-6">
-          <h3 class="text-2xl font-semibold text-gray-900 mb-2">Vita Cafe Catarata</h3>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Vita Cafe Catarata</h3>
           <p class="text-gray-600 mb-4">Frente al Parqueo de la catarata Río, La Fortuna</p>
-          <a href="https://maps.app.goo.gl/44HbdS2UAW4t46BD7" target="_blank" class="inline-block bg-[#4C2A13] text-white px-5 py-2 rounded hover:bg-[#341d0c] transition">
+          <!-- Aquí agregamos la línea de horario -->
+          <p class="text-gray-500 mb-4">
+            Horario: 9:00 AM – 5:00 PM (Lun – Dom)
+          </p>
+          <a href="https://maps.app.goo.gl/44HbdS2UAW4t46BD7" target="_blank" class="inline-block bg-[#6B3E26] hover:bg-[#56301F] text-white font-medium px-5 py-3 rounded-lg transition-colors">
             Ver en el mapa
           </a>
         </div>
       </div>
 
-      <!-- Heredia -->
-      <div class="bg-white shadow-lg rounded-xl overflow-hidden border">
-            <Image src={catarata} alt="Catarata" class="w-full h-82 object-cover bg-cover" />
+      <!-- Centro -->
+      <div class="relative bg-white rounded-xl border border-gray-200 shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+            <Image src={catarata} alt="Catarata" class="w-full h-100 object-cover bg-cover" />
         <div class="p-6">
-          <h3 class="text-2xl font-semibold text-gray-900 mb-2">Vita Cafe Centro</h3>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Vita Cafe Centro</h3>
           <p class="text-gray-600 mb-4">50 metros norte del banco popular, La Fortuna</p>
-          <a href="https://maps.app.goo.gl/iPmFReZt1Gop8Zq69" target="_blank" class="inline-block bg-[#4C2A13] text-white px-5 py-2 rounded hover:bg-[#341d0c] transition">
+          <!-- Aquí agregamos la línea de horario -->
+          <p class="text-gray-500 mb-4">
+            Horario: 9:00 AM – 5:00 PM (Lun – Dom)
+          </p>
+          <a href="https://maps.app.goo.gl/iPmFReZt1Gop8Zq69" target="_blank" class="inline-block bg-[#6B3E26] hover:bg-[#56301F] text-white font-medium px-5 py-3 rounded-lg transition-colors">
             Ver en el mapa
           </a>
         </div>

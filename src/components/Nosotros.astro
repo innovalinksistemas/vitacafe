@@ -1,7 +1,36 @@
 ---
+import { Image } from "astro:assets";
+import catarata from "../assets/catarata.jpg";
 
 ---
 
-<main class="h-screen bg-white">
+<section id="nosotros" class="relative bg-gray-950 text-white py-16 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <!-- Texto Izquierda -->
+    <div class="space-y-6">
+      <h2 class="text-4xl md:text-5xl font-light">Nuestra Historia</h2>
+      <p class="text-gray-300 leading-relaxed">
+        En 1995, con una pasión inquebrantable por el café y un sueño de compartir los sabores auténticos de Costa Rica con el mundo, fundamos Vita Café en el corazón del Valle Central.
+      </p>
+      <p class="text-gray-300 leading-relaxed">
+        Lo que comenzó como un pequeño taller de tostado familiar se ha convertido en una referencia de calidad y tradición. Durante casi tres décadas, hemos perfeccionado nuestras técnicas artesanales, manteniendo siempre el compromiso con la excelencia y la sostenibilidad.
+      </p>
+      <p class="text-gray-300 leading-relaxed">
+        Cada grano que tostamos cuenta una historia: la del agricultor que lo cultivó con dedicación, la de la tierra que lo nutrió, y la nuestra, que lo transforma con pasión en cada taza perfecta.
+      </p>
+    </div>
 
-</main>
+    <!-- Imagen Derecha -->
+    <div class="relative">
+      <Image src={catarata} alt="Catarata"
+        class="w-full rounded-xl shadow-lg object-cover"
+      />
+
+      <!-- Badge flotante -->
+      <div class="absolute -bottom-4 -right-4 bg-yellow-500 text-white py-4 px-6 rounded-lg drop-shadow-xl">
+        <p class="text-3xl font-bold leading-none">2</p>
+        <p class="text-sm uppercase tracking-widest">años de buen cafe</p>
+      </div>
+    </div>
+  </div>
+</section>

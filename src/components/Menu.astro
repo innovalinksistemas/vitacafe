@@ -1,0 +1,210 @@
+---
+import { Image } from "astro:assets";
+import vaso1 from "../assets/vaso1.png";
+import vaso2 from "../assets/vaso2.png";
+
+
+---
+
+<section id="menu" class="py-16 px-6 bg-[#43260F]">
+  <div class="max-w-6xl mx-auto">
+    <!-- Título -->
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+      Nuestro Menú 
+    </h2>
+    <div class="flex items-center justify-center gap-12 mb-10">
+        <div class="text-center">
+        <Image src={vaso1} alt="Vaso1" class="mmx-auto w-32 h-auto mb-2" />
+        <span class="text-lg font-semibold text-yellow-100">Single</span>
+        </div>
+        <div class="text-center">
+        <Image src={vaso2} alt="Vaso1" class="mx-auto w-32 h-auto mb-2" />
+        <span class="text-lg font-semibold text-yellow-300">Double</span>
+        </div>
+    </div>
+
+    <!-- Tabla de Menú -->
+    <div class="overflow-x-auto rounded-2xl">
+      <table class="min-w-full border-collapse">
+        <!-- Cabecera -->
+        <thead>
+          <tr class="bg-gray-200">
+            <th class="py-3 px-4 text-left text-gray-700 font-semibold">Bebida</th>
+            <th class="py-3 px-4 text-center text-gray-700 font-semibold">Single (₡)</th>
+            <th class="py-3 px-4 text-center text-gray-700 font-semibold">Double (₡)</th>
+          </tr>
+        </thead>
+
+        <tbody class="divide-y divide-gray-200">
+          <!-- Sección: CALIENTES / HOT -->
+          <tr>
+            <td colspan="3" class="bg-gray-100 text-gray-800 font-semibold px-4 py-2">
+              CALIENTES / HOT
+            </td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="py-2 px-4">Cappuccino</td>
+            <td class="py-2 px-4 text-center">1 700</td>
+            <td class="py-2 px-4 text-center">2 700</td>
+          </tr>
+          <tr class="bg-gray-50 hover:bg-gray-100">
+            <td class="py-2 px-4">Latte</td>
+            <td class="py-2 px-4 text-center">2 000</td>
+            <td class="py-2 px-4 text-center">3 000</td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="py-2 px-4">Latte Flavor<br/><span class="text-xs text-gray-500">(Caramelo, Vainilla, Hazelnut)</span></td>
+            <td class="py-2 px-4 text-center">2 500</td>
+            <td class="py-2 px-4 text-center">3 500</td>
+          </tr>
+          <tr class="bg-gray-50 hover:bg-gray-100">
+            <td class="py-2 px-4">Moka</td>
+            <td class="py-2 px-4 text-center">2 500</td>
+            <td class="py-2 px-4 text-center">3 500</td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="py-2 px-4">Flat White</td>
+            <td class="py-2 px-4 text-center">—</td>
+            <td class="py-2 px-4 text-center">2 300</td>
+          </tr>
+          <tr class="bg-gray-50 hover:bg-gray-100">
+            <td class="py-2 px-4">Espresso</td>
+            <td class="py-2 px-4 text-center">1 500</td>
+            <td class="py-2 px-4 text-center">2 000</td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="py-2 px-4">Espresso Macchiato</td>
+            <td class="py-2 px-4 text-center">1 600</td>
+            <td class="py-2 px-4 text-center">—</td>
+          </tr>
+          <tr class="bg-gray-50 hover:bg-gray-100">
+            <td class="py-2 px-4">Cortado</td>
+            <td class="py-2 px-4 text-center">—</td>
+            <td class="py-2 px-4 text-center">2 200</td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="py-2 px-4">Americano</td>
+            <td class="py-2 px-4 text-center">1 500</td>
+            <td class="py-2 px-4 text-center">2 000</td>
+          </tr>
+          <tr class="bg-gray-50 hover:bg-gray-100">
+            <td class="py-2 px-4">Drip Coffee / Café del Día</td>
+            <td class="py-2 px-4 text-center">1 500</td>
+            <td class="py-2 px-4 text-center">2 000</td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="py-2 px-4">Chocolate</td>
+            <td class="py-2 px-4 text-center">2 000</td>
+            <td class="py-2 px-4 text-center">3 000</td>
+          </tr>
+          <tr class="bg-gray-50 hover:bg-gray-100">
+            <td class="py-2 px-4">Chai Latte</td>
+            <td class="py-2 px-4 text-center">2 200</td>
+            <td class="py-2 px-4 text-center">3 500</td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="py-2 px-4">Matcha Latte</td>
+            <td class="py-2 px-4 text-center">2 200</td>
+            <td class="py-2 px-4 text-center">3 500</td>
+          </tr>
+          <tr class="bg-gray-50 hover:bg-gray-100">
+            <td class="py-2 px-4">Agua Dulce</td>
+            <td class="py-2 px-4 text-center">1 500</td>
+            <td class="py-2 px-4 text-center">2 000</td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="py-2 px-4">Té / Infusiones</td>
+            <td class="py-2 px-4 text-center">2 000</td>
+            <td class="py-2 px-4 text-center">—</td>
+          </tr>
+
+          <!-- Sección: FRÍAS / COLD -->
+          <tr>
+            <td colspan="3" class="bg-gray-100 text-gray-800 font-semibold px-4 py-2">
+              FRÍAS / COLD
+            </td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="py-2 px-4">Iced Latte</td>
+            <td class="py-2 px-4 text-center">2 000</td>
+            <td class="py-2 px-4 text-center">3 000</td>
+          </tr>
+          <tr class="bg-gray-50 hover:bg-gray-100">
+            <td class="py-2 px-4">Iced Latte Flavor<br/><span class="text-xs text-gray-500">(Caramelo, Vainilla, Hazelnut, Moka)</span></td>
+            <td class="py-2 px-4 text-center">2 500</td>
+            <td class="py-2 px-4 text-center">3 500</td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="py-2 px-4">Cold Brew</td>
+            <td class="py-2 px-4 text-center">2 000</td>
+            <td class="py-2 px-4 text-center">3 000</td>
+          </tr>
+          <tr class="bg-gray-50 hover:bg-gray-100">
+            <td class="py-2 px-4">Iced Americano</td>
+            <td class="py-2 px-4 text-center">2 000</td>
+            <td class="py-2 px-4 text-center">3 000</td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="py-2 px-4">Espresso Tonic</td>
+            <td class="py-2 px-4 text-center">3 000</td>
+            <td class="py-2 px-4 text-center">5 000</td>
+          </tr>
+          <tr class="bg-gray-50 hover:bg-gray-100">
+            <td class="py-2 px-4">Chai Latte (frío)</td>
+            <td class="py-2 px-4 text-center">2 200</td>
+            <td class="py-2 px-4 text-center">3 500</td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="py-2 px-4">Matcha Latte (frío)</td>
+            <td class="py-2 px-4 text-center">2 500</td>
+            <td class="py-2 px-4 text-center">3 500</td>
+          </tr>
+          <tr class="bg-gray-50 hover:bg-gray-100">
+            <td class="py-2 px-4">Limonada</td>
+            <td class="py-2 px-4 text-center">2 000</td>
+            <td class="py-2 px-4 text-center">3 000</td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="py-2 px-4">Iced Té / Té Frío</td>
+            <td class="py-2 px-4 text-center">2 000</td>
+            <td class="py-2 px-4 text-center">3 000</td>
+          </tr>
+
+          <!-- Sección: POUR OVER COFFEE -->
+          <tr>
+            <td colspan="3" class="bg-gray-100 text-gray-800 font-semibold px-4 py-2">
+              POUR OVER COFFEE
+            </td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="py-2 px-4">V60 / Kalita Wave</td>
+            <td class="py-2 px-4 text-center">—</td>
+            <td class="py-2 px-4 text-center">3 000</td>
+          </tr>
+
+          <!-- Sección: ADICIONALES -->
+          <tr>
+            <td colspan="3" class="bg-gray-100 text-gray-800 font-semibold px-4 py-2">
+              ADICIONALES
+            </td>
+          </tr>
+          <tr class="bg-gray-50 hover:bg-gray-100">
+            <td class="py-2 px-4">Vegetable Drinks (Avena, Almendra, Soya)</td>
+            <td class="py-2 px-4 text-center">300</td>
+            <td class="py-2 px-4 text-center">—</td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="py-2 px-4">Extra Espresso Shot</td>
+            <td class="py-2 px-4 text-center">500</td>
+            <td class="py-2 px-4 text-center">—</td>
+          </tr>
+          <tr class="bg-gray-50 hover:bg-gray-100">
+            <td class="py-2 px-4">Extra Pump Syrup</td>
+            <td class="py-2 px-4 text-center">250</td>
+            <td class="py-2 px-4 text-center">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
